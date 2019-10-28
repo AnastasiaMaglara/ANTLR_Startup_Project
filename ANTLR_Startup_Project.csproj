@@ -62,6 +62,7 @@
       <CustomToolNamespace>ANTLR_Startup_Project</CustomToolNamespace>
     </Antlr4>
     <None Include="packages.config" />
+    <None Include="test.dot" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="text.txt" />
