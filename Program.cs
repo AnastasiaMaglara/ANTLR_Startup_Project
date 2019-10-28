@@ -20,6 +20,10 @@ namespace ANTLR_Startup_Project
             CommonTokenStream tokens = new CommonTokenStream(lexer);
             firstParser parser = new firstParser(tokens);
             IParseTree tree = parser.compileUnit();
+
+            GraphvizPrinterVisitor printer = new GraphvizPrinterVisitor();
+            printer.Visit(tree);
+
             Console.WriteLine(tree.ToStringTree());
 
         }
