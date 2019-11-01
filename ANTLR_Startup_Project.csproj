@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ASTElement.cs" />
     <Compile Include="GraphvizPrinterVisitor.cs" />
     <Compile Include="obj\Debug\firstLexer.cs" />
     <Compile Include="obj\Debug\firstParser.cs" />
@@ -61,11 +62,12 @@
       <Generator>MSBuild:Compile</Generator>
       <CustomToolNamespace>ANTLR_Startup_Project</CustomToolNamespace>
     </Antlr4>
+    <None Include="bin\Debug\test.dot" />
     <None Include="packages.config" />
-    <None Include="test.dot" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="text.txt" />
+    <Content Include="bin\Debug\test.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -14,7 +14,7 @@ namespace ANTLR_Startup_Project
         
         static void Main(string[] args)
         {
-            StreamReader astream = new StreamReader("text.txt");
+            StreamReader astream = new StreamReader("test.txt");
             AntlrInputStream antlrStream=new AntlrInputStream(astream);
             firstLexer lexer = new firstLexer(antlrStream);
             CommonTokenStream tokens = new CommonTokenStream(lexer);

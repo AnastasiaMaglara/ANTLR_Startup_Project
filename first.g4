@@ -6,7 +6,8 @@ compileUnit
 
 expr
 	: NUMBER
-	| expr '+' expr
+	| expr op=('*'|'/') expr
+	| expr op=('+'|'-') expr
 	;
 
 NUMBER
